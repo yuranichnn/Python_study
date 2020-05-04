@@ -4,8 +4,8 @@ while string_in != 'end':
     matrix_in.append([int(i) for i in string_in.split()])
     string_in = input()
 if matrix_in != []:
-    kol_string = int(len(matrix_in))
-    kol_stolb = int(len(matrix_in[0]))
+    kol_string = len(matrix_in)
+    kol_stolb = len(matrix_in[0])
 matrix_out = []
 for i in range(kol_string):
     matrix_out.append([0] * kol_stolb)
